@@ -1,10 +1,8 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 
-urlpatterns = [
-    # Examples:
-    # url(r'^$', 'pollsproject1.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+urlpatterns = patterns('',
+    url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^admin/', include(admin.site.urls)),
-]
+)
 
