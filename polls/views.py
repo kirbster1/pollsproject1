@@ -4,9 +4,6 @@ from django.template import RequestContext, loader
 from django.views import generic
 from django.utils import timezone
 
-
-
-
 from django.core.urlresolvers import reverse
 
 from polls.models import Question, Choice
